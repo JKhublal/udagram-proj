@@ -60,14 +60,6 @@ import { nextTick } from 'process';
     res.send("try GET /filteredimage?image_url={{}}")
   } );
 
-  app.get( "/test", async ( req: Request, res: Response ) => {
-    let info = req.query.youcant;
-    console.log(info);
-    res.send(info)
-  } );
-  
-
-
   // Start the Server
   app.listen( port, () => {
       console.log( `server running http://localhost:${ port }` );
